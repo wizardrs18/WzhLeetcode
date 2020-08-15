@@ -1,16 +1,8 @@
 package com.company.easy;
 
 public class NFactorialn {
-    int sum=0;
-    int n;
-    public int sumNums(int n) {
-        this.n=n;
-         circleNums(n);
-         return sum;
+    public int sumNums(int now) {
+        boolean b= now >0 && (now+=sumNums(now-1))>0;
+        return now;
     }
-    public void circleNums(int now){
-            sum+=now--;
-            circleNums(now);
-    }
-
 }
