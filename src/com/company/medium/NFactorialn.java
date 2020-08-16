@@ -1,4 +1,4 @@
-package com.company.easy;
+package com.company.medium;
 
 public class NFactorialn {
     public int sumNums(int now) {
