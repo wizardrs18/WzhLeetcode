@@ -1,7 +1,4 @@
-package com.company.difficult;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.company.hard;
 
 public class Queen {
     int sum=0;
