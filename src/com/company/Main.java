@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.hard.CookTheOrder;
-import com.company.hard.EightQueen;
-import com.company.hard.Queen;
-import com.company.hard.RestoreTheBinaryTreeFromSequentialTraversal1028;
+import com.company.hard.*;
 import com.company.medium.NFactorialn;
 import com.company.medium.TheNumberOfCombatUnits1395;
 
@@ -25,7 +22,7 @@ public class Main {
 //        EightQueen queen=new EightQueen();
 //        System.out.println(queen.solveNQueens(4));
         int[] nums;
-        nums= new int[]{5,3,5,-2,3};
+        nums= new int[]{3,1,5,8};
 //        TheNumberOfGoodPairs1512 theNumberOfGoodPairs1512=new TheNumberOfGoodPairs1512();
 //        System.out.println(theNumberOfGoodPairs1512.numIdenticalPairs(nums));
 //        NFactorialn nFactorialn=new NFactorialn();
@@ -34,7 +31,9 @@ public class Main {
 //        System.out.println(theNumberOfCombatUnits1395.numTeams(nums));
 //        RestoreTheBinaryTreeFromSequentialTraversal1028 restoreTheBinaryTreeFromSequentialTraversal1028=new RestoreTheBinaryTreeFromSequentialTraversal1028();
 //        restoreTheBinaryTreeFromSequentialTraversal1028.recoverFromPreorder("1-2--3--4-5--6--7");
-        CookTheOrder cookTheOrder=new CookTheOrder();
-        System.out.println(cookTheOrder.maxSatisfaction(nums));
+//        CookTheOrder cookTheOrder=new CookTheOrder();
+//        System.out.println(cookTheOrder.maxSatisfaction(nums));
+        PokeTheBalloon312 pokeTheBalloon312=new PokeTheBalloon312();
+        System.out.println(pokeTheBalloon312.maxCoins(nums));
     }
 }
