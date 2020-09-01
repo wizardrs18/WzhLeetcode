@@ -1,9 +1,7 @@
 package com.company;
 
 import com.company.hard.*;
-import com.company.medium.NFactorialn;
-import com.company.medium.NoPermutationOrCombinationOfRepeatingStrings0807;
-import com.company.medium.TheNumberOfCombatUnits1395;
+import com.company.medium.*;
 
 import java.util.Arrays;
 
@@ -24,8 +22,8 @@ public class Main {
 //        System.out.println(queen.totalNQueens(9));
 //        EightQueen queen=new EightQueen();
 //        System.out.println(queen.solveNQueens(4));
-//        int[] nums;
-//        nums= new int[]{3,1,5,8};
+        int[] nums;
+        nums= new int[]{2,4,1,2,7,8};
 //        char[] chars;
 //        chars=new char[]{'a','b','a','z'};
 //        TheNumberOfGoodPairs1512 theNumberOfGoodPairs1512=new TheNumberOfGoodPairs1512();
@@ -48,9 +46,15 @@ public class Main {
 //        System.out.println(setsOfWordsWithTheHighestScore1255.maxScoreWords(new String[]{"leetcode"},
 //                new char[] {'l','e','t','c','o','d'},
 //                new int[]{0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0}));
-        String str="qwe";
-        NoPermutationOrCombinationOfRepeatingStrings0807 noPermutationOrCombinationOfRepeatingStrings0807=
-                new NoPermutationOrCombinationOfRepeatingStrings0807();
-        System.out.println(Arrays.toString(noPermutationOrCombinationOfRepeatingStrings0807.permutation(str)));
+//        String str="qwe";
+//        NoPermutationOrCombinationOfRepeatingStrings0807 noPermutationOrCombinationOfRepeatingStrings0807=
+//                new NoPermutationOrCombinationOfRepeatingStrings0807();
+//        System.out.println(Arrays.toString(noPermutationOrCombinationOfRepeatingStrings0807.permutation(str)));
+//        TheLargestTree654 theLargestTree654=new TheLargestTree654();
+//        theLargestTree654.constructMaximumBinaryTree(nums);
+//        Parentheses0809 parentheses0809=new Parentheses0809();
+//        parentheses0809.generateParenthesis(3);
+        MaximumNumberOfCOINS1561 maximumNumberOfCOINS1561 =new MaximumNumberOfCOINS1561();
+        maximumNumberOfCOINS1561.maxCoins(nums);
     }
 }
