@@ -26,8 +26,9 @@ public class UserGrouping1282 {
         boolean[] isVisited = new boolean[groupSizes.length];
         List<List<Integer>> ans = new ArrayList<>();
         for (int i = 0; i < groupSizes.length; i++) {
-            if (!isVisited[i])
+            if (!isVisited[i]) {
                 collect(ans, isVisited, groupSizes, i);
+            }
         }
         return ans;
     }
