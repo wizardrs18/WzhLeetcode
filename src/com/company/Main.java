@@ -23,7 +23,7 @@ public class Main {
 //        EightQueen queen=new EightQueen();
 //        System.out.println(queen.solveNQueens(4));
         int[] nums;
-        nums= new int[]{2,4,1,2,7,8};
+        nums= new int[]{1,2,3};
 //        char[] chars;
 //        chars=new char[]{'a','b','a','z'};
 //        TheNumberOfGoodPairs1512 theNumberOfGoodPairs1512=new TheNumberOfGoodPairs1512();
@@ -54,7 +54,9 @@ public class Main {
 //        theLargestTree654.constructMaximumBinaryTree(nums);
 //        Parentheses0809 parentheses0809=new Parentheses0809();
 //        parentheses0809.generateParenthesis(3);
-        MaximumNumberOfCOINS1561 maximumNumberOfCOINS1561 =new MaximumNumberOfCOINS1561();
-        maximumNumberOfCOINS1561.maxCoins(nums);
+//        MaximumNumberOfCOINS1561 maximumNumberOfCOINS1561 =new MaximumNumberOfCOINS1561();
+//        maximumNumberOfCOINS1561.maxCoins(nums);
+        PowerSet0804 powerSet0804=new PowerSet0804();
+        powerSet0804.subsets(nums);
     }
 }
