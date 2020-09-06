@@ -10,7 +10,11 @@ public class Codec535 {
     // Encodes a URL to a shortened URL.
     Map<String,String> map=new HashMap<>();
     String code="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    int flag=0;
     public String encode(String longUrl) {
+        if("/".equals(((Character)longUrl.charAt(longUrl.length()-1)).toString())){
+            flag=1;
+        }
         String shortURL="";
         String[] str=longUrl.split("/");
         Random random=new Random();
@@ -34,6 +38,9 @@ public class Codec535 {
         longUrl+=str[0]+"/";
         for(int i=2;i<str.length;i++){
             longUrl+="/"+map.get(str[i]);
+        }
+        if (flag==1) {
+            longUrl += "/";
         }
         return longUrl;
     }
