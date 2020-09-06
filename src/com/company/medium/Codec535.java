@@ -12,16 +12,16 @@ public class Codec535 {
     String code="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     public String encode(String longUrl) {
         String shortURL="";
-        String[] str=StringUtils.splitString(longUrl,"/");
+        String[] str=longUrl.split("/");
         Random random=new Random();
         shortURL+=str[0]+"//";
-        for(int i=1;i<str.length;i++){
+        for(int i=2;i<str.length;i++){
             StringBuffer name=new StringBuffer();
             for(int j=0;j<3;j++){
             name.append(code.charAt(random.nextInt(62)));
             }
             map.put(String.valueOf(name),str[i]);
-            shortURL+=String.valueOf(name);
+            shortURL+=name+"/";
         }
         return shortURL;
     }
@@ -29,11 +29,11 @@ public class Codec535 {
     // Decodes a shortened URL to its original URL.
     public String decode(String shortUrl) {
         String longUrl="";
-        String[] str=StringUtils.splitString(shortUrl,"/");
+        String[] str=shortUrl.split("/");
         Random random=new Random();
-        longUrl+=str[0]+"//";
-        for(int i=1;i<str.length;i++){
-            longUrl+=map.get(str[i]);
+        longUrl+=str[0]+"/";
+        for(int i=2;i<str.length;i++){
+            longUrl+="/"+map.get(str[i]);
         }
         return longUrl;
     }

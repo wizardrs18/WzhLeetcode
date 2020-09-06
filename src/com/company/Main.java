@@ -58,7 +58,9 @@ public class Main {
 //        maximumNumberOfCOINS1561.maxCoins(nums);
 //        PowerSet0804 powerSet0804=new PowerSet0804();
 //        powerSet0804.subsets(nums);
-          WaterNumber1721 waterNumber1721=new WaterNumber1721();
-          waterNumber1721.trap(nums);
+//          WaterNumber1721 waterNumber1721=new WaterNumber1721();
+//          waterNumber1721.trap(nums);
+        Codec535 codec535=new Codec535();
+        codec535.decode(codec535.encode("http://airport.example.com/"));
     }
 }
